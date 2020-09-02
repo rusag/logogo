@@ -1,0 +1,29 @@
+#####   create a network utilizing an unused private address range on your machine
+docker network create localdev --subnet 10.0.1.0/24
+
+# sudo docker network create localdev2 --subnet 0.0.0.0/8000
+
+networks:
+  default:
+    external:
+      name: localdev
+
+#####
+
+### Find running containers
+sudo docker ps
+sudo docker exec logogo-on-docker_web_1 python manage.py startapp engine
+
+###
+
+### add permissions
+sudo chown -R $USER:$USER .
+###
+
+### Open django shell and save data to DB
+sudo docker exec -it logogo-on-docker_web_1 python manage.py shell
+from engine.models import Industry
+obj = Industry()
+obj.content = "manufacturing"
+obj.save()
+###

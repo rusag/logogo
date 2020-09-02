@@ -1,0 +1,12 @@
+/* Webfont: Acacio-Regular */@font-face {
+    font-family: 'Acacio';
+    src: url('Acacio-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Acacio-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Acacio-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Acacio-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Acacio-Regular.svg#Acacio-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

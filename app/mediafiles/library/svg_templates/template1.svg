@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="570" height="345" viewBox="0 0 570 345">
+  <defs>
+    <clipPath id="clip-Icon_Typo_2_line_Slogan">
+      <rect width="570" height="345"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Typo_2_line_Slogan" data-name="Icon + Typo 2 line + Slogan" clip-path="url(#clip-Icon_Typo_2_line_Slogan)">
+    <rect width="570" height="345" fill="#fff"/>
+    <circle id="Icon_Placeholder" data-name="Icon Placeholder" cx="35" cy="35" r="35" transform="translate(250 69)" fill="#464646"/>
+    <text id="Slogan_Placeholder" data-name="Slogan Placeholder" transform="translate(214 273)" fill="#464646" font-size="18" font-family="SpaceGrotesk-Bold, Space Grotesk" font-weight="700"><tspan x="0" y="0">Slogan goes here</tspan></text>
+    <text id="Text_Placeholder" data-name="Text Placeholder" transform="translate(285 196)" fill="#464646" font-size="57" font-family="SpaceGrotesk-Bold, Space Grotesk" font-weight="700"><tspan x="-88.322" y="0">BRAND</tspan><tspan x="-76.665" y="50">NAME</tspan></text>
+    <g id="Safe_Area_-_Don_t_Render" data-name="Safe Area - Don&apos;t Render" transform="translate(-0.5 -0.5)">
+      <line id="Line_1" data-name="Line 1" y1="345" transform="translate(69.5 0.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_2" data-name="Line 2" y1="345" transform="translate(500.5 0.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_3" data-name="Line 3" x2="570" transform="translate(0.5 69.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_4" data-name="Line 4" x2="570" transform="translate(0.5 276.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(0.5 0.5)" fill="none" stroke="#707070" stroke-width="1">
+        <rect width="570" height="345" stroke="none"/>
+        <rect x="0.5" y="0.5" width="569" height="344" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

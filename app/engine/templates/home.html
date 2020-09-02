@@ -1,0 +1,67 @@
+{% load static %}
+{% load bootstrap3 %} 
+{% bootstrap_messages %} 
+
+<!DOCTYPE html> 
+<html lang="en"> 
+
+	<link rel="stylesheet" href="/staticfiles/css/main.css" type="text/css">
+
+<head > 
+
+	<title>Basic Form</title> 
+	
+	<meta charset="utf-8" /> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+</script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> 
+</script> 
+</head> 
+
+<body style="padding-top: 60px;background-color: #f5f7f8 !important;"> 
+	<div class="container"> 
+	<div class="row"> 
+		<div class="col-md-4 col-md-offset-4"> 
+		<h2>LOGOGO engine</h2> 
+
+		<!-- <img src="{% static 'engine/report.png' %}" alt="My image"/> -->
+
+
+		{% if png_url %}
+		<img src="{{ png_url }}" alt="PNG file"/>
+		<form action="{% url 'home' %}" method="get"><input type='hidden'/> 
+			{%csrf_token %} 
+			<div class="form-group"> 
+				<button type="submit" class="btn btn-default "> 
+					Home 
+				</button> 
+			</div> 
+
+		</form> 
+	  	{% endif %}
+
+
+			<form action="{% url 'home' %}" method="post"><input type='hidden'/> 
+				{%csrf_token %} 
+				{{ form.as_p }}
+
+				{% if not svg_url %}
+				<div class="form-group"> 
+					<button type="submit" class="btn btn-default "> 
+						Submit 
+					</button> 
+				</div> 
+				{% endif %}
+
+			</form> 
+		</div> 
+	</div> 
+</div> 
+
+</body> 
+
+</html> 
